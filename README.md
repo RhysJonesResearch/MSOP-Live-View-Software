@@ -1,5 +1,7 @@
 MetaSOP Live View
 
+[![DOI](https://zenodo.org/badge/1472763193.svg)](https://doi.org/10.5281/zenodo.24553062)
+
 Real-time stress mapping with MSOP. The software grabs frames from the Basler camera, splits each frame into left and right views, computes disparity on the GPU, and displays disparity and stress maps at about 4 frames per second.
 
 1. Requirements
