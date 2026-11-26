@@ -11,19 +11,32 @@ pip install numpy opencv-python matplotlib pyopencl pypylon
 2. Folder layout
 The code finds its data by searching the current working directory's path for a folder named StereoOpticalPalpation, so the folders must be arranged like this:
 StereoOpticalPalpation\
-├── SOP_CODE\SOP_Code_2026_Meta\        <- run from here \\
+├── SOP_CODE\SOP_Code_2026_Meta\        <- run from here
+
 │   ├── sop_main_MetaLive.py               entry point for the live view
+
 │   ├── sop_take_pic_Meta.py               captures single left/right images
+
 │   ├── ximea\
+
 │   └── sop\
+
 │       ├── display\live_capture_Rhys_edit.py   camera, main loop, stress conversion, display
+
 │       ├── logic\stereo_processor.py           GPU disparity calculation
+
 │       └── logic\roi_selector.py               region-of-interest handling
+
 └── SOP_Data\Probe_2026\                   results and data folder
+
     ├── Config.json                        camera settings (section 4.1)
+    
     ├── LayerDispDist.txt                  stage readings from the disparity–displacement calibration
+    
     └── Scans\
+    
         ├── LayerAtWindow\disp_int.npy     reference disparity map (section 4.2)
+        
         └── <date_time>\                   snapshots are saved here
 
 3. Running the live view
