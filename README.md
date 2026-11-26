@@ -11,7 +11,7 @@ pip install numpy opencv-python matplotlib pyopencl pypylon
 2. Folder layout
 The code finds its data by searching the current working directory's path for a folder named StereoOpticalPalpation, so the folders must be arranged like this:
 StereoOpticalPalpation\
-├── SOP_CODE\SOP_Code_2026_Meta\        <- run from here \n
+├── SOP_CODE\SOP_Code_2026_Meta\        <- run from here \\
 │   ├── sop_main_MetaLive.py               entry point for the live view
 │   ├── sop_take_pic_Meta.py               captures single left/right images
 │   ├── ximea\
